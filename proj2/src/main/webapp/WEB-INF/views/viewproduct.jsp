@@ -13,19 +13,24 @@
 </head>
 <%@include file="header.jsp" %>
 <h3>The Product Are:</h3>
-<table border="2" width="70%" cellpadding="2">  
-<tr><th>Id</th><th>Name</th><th>Address</th></tr>  
+<table border="2" width="70%" cellpadding="2" class="table table-hover" >  
+<tr><th>Id</th><th>Name</th><th>Address</th><th>Image</th><th>Edit</th><th>Delete</th></tr>  
    <c:forEach var="product" items="${list}">   
    <tr>  
-   <td>${product.productId}</td>  
-   <td>${product.productName}</td>  
-   <td>${product.productPrice}</td>
+   <td><h4><b>${product.productId}</b></h4></td> 
+   <td><h4><b>${product.productName}</b></h4></td>
+   <td><h4><b>${product.productPrice}</b></h4></td>
      
   <td><img src="${pageContext.request.contextPath}/${product. productImage}" height="50" width="50"></td>
-   <td><a href="editproduct/${product.productId}">Edit</a></td>  
-   <td><a href="deleteproduct/${product.productId}">Delete</a></td>  
+      <td><a href="editproduct/${product.productId}"><button type="button" class="btn btn-success">
+                         <span  class="glyphicon glyphicon-edit"></span>   Edit
+                        </button></a></td> 
+                           <td><a href="deleteproduct/${product.productId}"><button type="button" class="btn btn-danger">
+                         <span  class="glyphicon glyphicon-delete"></span>   Delete
+                        </button></a></td>
    </tr>  
    </c:forEach>  
    </table>  
    <br>  
-   <a href="manageproduct">Add New Product</a>  
+   <center>
+   <a href="manageproduct" class="btn btn-warning">Add New Product</a> </center>

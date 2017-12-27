@@ -38,9 +38,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
       </property>
       <property name="annotatedClasses">
             <list>
-                  
- 
-                   <value>com.niiit.proj2.model.Product</value>
+                    <value>com.niiit.proj2.model.Product</value>
                     <value>com.niiit.proj2.model.Category</value>
                       <value>com.niiit.proj2.model.Users</value>
                       <value>com.niiit.proj2.model.Cart</value>
@@ -51,7 +49,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
       </property>
 </bean>
 
-  <tx:annotation-driven/>
+   <tx:annotation-driven/>
     <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>

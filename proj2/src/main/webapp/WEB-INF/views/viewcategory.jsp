@@ -17,15 +17,15 @@
 <body>
 <%@include file="header.jsp" %>
 <h3>The Categories Are:</h3>
-<table border="2" width="70%" cellpadding="2">  
+<table border="2" width="70%" cellpadding="2" class="table table-hover" >  
 <tr><th>Id</th><th>Name</th><th>Address</th></tr>  
    <c:forEach var="category" items="${list}">   
    <tr>  
-   <td>${category.categoryId}</td>  
-   <td>${category.categoryName}</td>  
-  
-   <td><a href="editcategory/${category.categoryId}">Edit</a></td>  
-     
+   <td><h4><b>${category.categoryId}</b></h4></td> 
+   <td><h4><b>${category.categoryName}</b></h4></td>  
+   <td><a href="editcategory/${category.categoryId}"><button type="button" class="btn btn-success">
+                         <span  class="glyphicon glyphicon-edit"></span>   Edit
+                        </button></a></td>
    </tr>  
    </c:forEach>  
    </table>  

@@ -18,12 +18,11 @@
       <form:form method="post" action="save" enctype="multipart/form-data" >  
     
          ${error}
-  
-        
-           <label><b>Id :</b></label>    
-          <td><form:input path="userId" class="form-control" />     
+  <label><b>UserId :    </b></label>
+        <form:input path="userId" class="form-control"  />
+                 
          
-          <label><b>Name :    </b></label>
+          <label><b>UserName :    </b></label>
           <form:input path="userName" class="form-control" />  
              
                    
@@ -41,7 +40,7 @@
          <br>
          <br>
            <center>
-         <input type="submit"  id="btnSubmit" class="btn btn-primary btn-md btn-success"  value="Save" onclick="return Validate()"/>    
+         <input type="submit"  id="btnSubmit" class="btn btn-primary btn-md btn-success"  value="Create" onclick="return Validate()"/>    
            </center>
        
        <script type="text/javascript">

@@ -25,8 +25,8 @@
   
   <div class="container">
   <div class="form-group">
-    <label><b>Username</b></label>
-    <input type="text" class="form-control"	 placeholder="Enter Username" name="username" required>
+    <label><b>UserId</b></label>
+    <input type="text" class="form-control"	 placeholder="Enter UserId" name="username" required>
 <br>
 <br>
 

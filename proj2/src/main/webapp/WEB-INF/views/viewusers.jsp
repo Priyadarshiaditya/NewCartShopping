@@ -11,19 +11,23 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>    
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
   <%@include file="header.jsp" %>
-<h1>Employees List</h1>  
-<table border="2" width="70%" cellpadding="2">  
-<tr><th>Id</th><th>Name</th><th>Address</th></tr>  
+<h1>Users List</h1>  
+<table border="2" width="70%" cellpadding="2" class="table table-hover">  
+<tr><th>Id</th><th>Name</th><th>Image</th><th>Delete</th></tr>  
    <c:forEach var="user" items="${list}">   
    <tr>  
-   <td>${user.userId}</td>  
-   <td>${user.userName}</td>  
+   <td><h4><b>${user.userId}</b></h4></td>
+   <td><h4><b>${user.userName}</b></h4></td>  
      
   <td><img src="${pageContext.request.contextPath}/${user.userImage}" height="50" width="50"></td>
-   <td><a href="editusers/${user.userId}">Edit</a></td>  
-   <td><a href="deleteusers/${user.userId}">Delete</a></td>  
+   <td><a href="deleteusers/${user.userId}"><button type="button" class="btn btn-danger">
+                         <span  class="glyphicon glyphicon-delete"></span>   Delete
+                        </button></a></td>
    </tr>  
    </c:forEach>  
    </table>  
    <br/>  
-   <a href="usersform">Add New Employee</a>  
+   <center>
+     <a href="usersform" class="btn btn-warning">Add New Users</a>
+       
+     </center> 

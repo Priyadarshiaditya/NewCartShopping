@@ -14,10 +14,6 @@
          <tr>    
           <td>Name : </td>   
           <td><form:input path="userName"  /></td>  
-         </tr>    
-         <tr>    
-          <td>Address  :</td>    
-          <td><form:input path="userAddress" /></td>  
          </tr>   
           <td><img src="${pageContext.request.contextPath}/${photo}" height="50" width="50"></td>
            <tr>

@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -22,10 +23,31 @@ public class Users implements Serializable
 {
 
 
-
-	@Id
+    @Id
     @Column(name="userid")
+ 
 	private String userId;
+	
+
+
+
+
+	public String getUserId() {
+		return userId;
+	}
+
+
+
+
+
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+
+
+
 	@NotEmpty(message = "Please enter User Name")
 	private String userName;
 	private String password;
@@ -195,20 +217,6 @@ public class Users implements Serializable
 	
 	
 
-
-
-	public String getUserId() {
-		return userId;
-	}
-
-
-
-
-
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
 
 
 

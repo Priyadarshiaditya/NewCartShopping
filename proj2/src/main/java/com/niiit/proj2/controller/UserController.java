@@ -112,7 +112,7 @@ public class UserController {
     		
     	{
     		
-    		System.out.println("uiuiuiuiuiuiu"+ file.getSize());
+    		System.out.println( file.getSize());
 byte fileBytes[];
 FileOutputStream fos = null;
 

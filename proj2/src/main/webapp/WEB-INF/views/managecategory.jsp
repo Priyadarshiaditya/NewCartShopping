@@ -27,17 +27,17 @@
     }
     </style>         
         <table style="width:100%">
-        <tr>    
-          <td>Category Id : </td>   
-          <td><form:input path="categoryId"  /></td>  
-         </tr>     
-         <tr>    
-          <td>Category Name : </td>   
-          <td><form:input path="categoryName"  /></td>  
-         </tr>    
+        <tr>  
+         <label><b>Category Id :   </b></label>
+          <form:input path="categoryId" class="form-control" /> 
+         </tr>  
+           <tr>  
+         <label><b>Category Name :   </b></label>
+          <form:input path="categoryName" class="form-control" /> 
+         </tr>        
          <tr>    
           <td> </td>    
-          <td><input type="submit" value="Save" /></td>    
+          <td><input type="submit"  id="btnSubmit" class="btn btn-primary btn-md btn-success" type="submit" value="Save" /></td>    
          </tr>   
             
         </table> 

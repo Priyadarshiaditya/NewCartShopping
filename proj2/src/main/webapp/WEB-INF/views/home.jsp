@@ -24,21 +24,29 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
    
     <div class="carousel-inner">
       <div class="item active">
-        <img src="http://i.imgur.com/syaiqAs.jpg" alt="Los Angeles" style="width:100%;height:500px">
+        <img src="https://imgur.com/onPlydl.jpg" alt="Los Angeles" style="width:100%;height:500px">
       </div>
 
       <div class="item">
-        <img src="http://i.imgur.com/L9P0BwB.jpg" alt="Chicago" style="width:100%;height:500px">
+        <img src="https://imgur.com/KJT06zK.jpg" alt="Chicago" style="width:100%;height:500px">
       </div>
     
       <div class="item">
-        <img src="http://i.imgur.com/syaiqAs.jpg" alt="New york" style="width:100%;height:500px">
+        <img src="https://imgur.com/qJta3DM.jpg" alt="New york" style="width:100%;height:500px">
+      </div>
+      <div class="item">
+        <img src="https://imgur.com/f17a2fL.jpg" alt="New york" style="width:100%;height:500px">
+      </div>
+      <div class="item">
+        <img src="https://imgur.com/rS1TQc4.jpg" alt="New york" style="width:100%;height:500px">
       </div>
     </div>
 
@@ -52,7 +60,41 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div class="container">
+  <h2>Whats new?</h2>
+  <p></p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Men</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://imgur.com/XDL2Tsm.jpg" alt="trendhim" style="width:100%"></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Women</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://imgur.com/UlhV10p.jpg" alt="trendhim" style="width:100%;"></td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
 </div>
+
  
   </body>
 </html>

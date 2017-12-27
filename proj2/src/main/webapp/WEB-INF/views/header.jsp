@@ -36,7 +36,7 @@
     
         
         			
-    <li class="dropdown">
+	    <li class="dropdown">
         
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Products <span class="caret"></span></a>
          <!-- <ul class="dropdown-menu">  is used to create the sub menu items -->
@@ -71,6 +71,7 @@
       	</ul>
       	<ul class="nav navbar-nav navbar-right">
       	 <c:if test="${pageContext.request.userPrincipal.name != null}">
+      	  <li><a href="#">Welcome,${pageContext.request.userPrincipal.name}</a></li>
       	  <li><a href="${pageContext.request.contextPath}/cart/showCart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       	  <li><a href="${pageContext.request.contextPath}/logout"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
       	 </c:if>

@@ -16,7 +16,7 @@
 <head>
 <%@ include file="header.jsp" %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Shop First</title>
 </head>
 
 <body>
@@ -30,23 +30,23 @@
     ${error}         
         <table style="width:100%">
         <tr>    
-          <td>Product Id : </td>   
+          <td><strong><b>Product Id :</b></strong> </td>   
           <td><form:input path="productId"  /></td>  
          </tr>     
          <tr>    
-          <td>Product Name : </td>   
+          <td><strong><b>Product Name : </b></strong></td>   
           <td><form:input path="productName"  /></td>  
          </tr>    
          <tr>    
-          <td>Product Price :</td>    
+          <td><strong><b>Product Price :</b></strong></td>    
           <td><form:input path="productPrice" /></td>  
          </tr>      
               <tr>    
-          <td>Product Description : </td>   
+          <td><strong><b>Product Description :</b></strong> </td>   
    <td ><form:textarea path="productDescription" id="desc" rows="5" cols="100" size="255" /></td>
          </tr>  
         <tr>
-				<td>Category:</td>
+				<td><strong><b>Category:</b></strong></td>
 				<td><form:select path="productCategory.categoryId" itemLabel="categoryName" itemValue="categoryId" items="${categoryList}"
 					 /></td>
 				<td><form:errors path="productCategory.categoryId" cssClass="error" /></td>
@@ -55,12 +55,12 @@
 									<td><form:hidden path="productImage"/></td>
 								</tr>
 								<tr>
-									<td>Choose Image</td>
+									<td><strong><b>Choose Image</b></strong></td>
 									<td><input type="file" name="file"/></td>
 								</tr>    
            <tr>    
           <td> </td>    
-          <td><input type="submit" value="Save" onclick="return limitText()" /></td>    
+          <td><input type="submit" value="Save" class="btn btn-primary btn-md btn-success" onclick="return limitText()" /></td>    
          </tr>   
             
         </table> 
